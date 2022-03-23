@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_Lat_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView_Lon_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_Lat_invisible"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearlayout_1">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="8mm"
+            android:layout_height="8mm"
+            android:layout_above="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/marker" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView_address_indication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please edit address if necessary and then confirm it:"
+            android:textSize="7pt" />
+
+        <EditText
+            android:id="@+id/editText_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_edit_address"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/btn_confirm_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="confirm"
+            android:textSize="8pt"
+            android:onClick="onClickBackShareActivity"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

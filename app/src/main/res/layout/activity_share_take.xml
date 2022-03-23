@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        android:text="username"
+        android:textColor="@color/silver" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:lines="7"
+        android:maxLines="7"
+        android:text="WELCOME TO SHAREIN!\n IF YOU HAVE SOMETHING EXTRA\n FEEL FREE TO SHARE IT WITH YOUR FRIENDS\n AND NEIGHBORS.\n IF YOU NEED SOMETHING - TAKE IT! \n TOGETHER WE WILL REDUCE WASTE AND MAKE \n EVERYONE A LITTLE BIT HAPPIER."
+        android:textAlignment="center"
+        android:textColor="@color/silver" />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:text="SHARE" />
+
+    <Button
+        android:id="@+id/btn_take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:text="TAKE" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/img_hands" />
+
+</LinearLayout>

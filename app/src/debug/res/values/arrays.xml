@@ -1,0 +1,19 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="categories">
+        <item>Alcohol</item>
+        <item>Bakery &amp; Bread</item>
+        <item>Beverages</item>
+        <item>Breakfast &amp; Cereals</item>
+        <item>Dairy &amp; Eggs</item>
+        <item>Deli</item>
+        <item>Fresh Meat &amp; Seafood</item>
+        <item>Fresh Produce</item>
+        <item>Frozen Foods</item>
+        <item>Pantry Essentials</item>
+        <item>Snacks</item>
+        <item>Others</item>
+
+    </string-array>
+
+</resources>

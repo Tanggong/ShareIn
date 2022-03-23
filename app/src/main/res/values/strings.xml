@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ShareIn</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string-array name="food_categories">
+        <item>Alcohol</item>
+        <item>Bakery &amp; Bread</item>
+        <item>Beverages</item>
+        <item>Breakfast &amp; Cereals</item>
+        <item>Dairy &amp; Eggs</item>
+        <item>Deli</item>
+        <item>Fresh Meat &amp; Seafood</item>
+        <item>Fresh Produce</item>
+        <item>Frozen Foods</item>
+        <item>Fruits</item>
+        <item>Pantry Essentials</item>
+        <item>Snacks</item>
+        <item>Vegetables</item>
+        <item>Other</item>
+    </string-array>
+</resources>
